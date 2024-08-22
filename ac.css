@@ -1,0 +1,201 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree', sans-serif;
+}
+
+body {
+    background-image: url('img/ab.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #212529; /* Dark text color */
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    padding: 10px 15px; /* Adjust padding */
+    backdrop-filter: blur(40px); /* Intense blur effect */
+}
+
+.navbar-brand img {
+    height: 80px; /* Adjust logo size */
+    width: auto;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Center nav items */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px; /* Adjust font size */
+    margin: 0 10px; /* Adjust spacing between links */
+    color: aliceblue; /* Light text color */
+}
+
+.navbar-toggler {
+    padding: 10px 20px; /* Ensure padding is set */
+    font-size: 1.25rem; /* Increase font size for visibility */
+    line-height: 1.2; /* Adjust line height */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-toggler:hover {
+    background-color: #f1312a; /* Darker background on hover */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: rgba(206, 47, 47, 0.936); /* Primary button color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(159, 138, 138); /* Hover color */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/hero-bg.jpg') center center/cover no-repeat; /* Background image for hero section */
+    color: #f8f9fa; /* Light text color */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured Programs Section */
+.featured-programs {
+    padding: 60px 20px;
+}
+
+.program-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.program-card .btn-primary {
+    background-color: rgba(206, 47, 47, 0.936); /* Primary button color */
+    border: none;
+}
+
+.program-card .btn-primary:hover {
+    background-color: rgb(159, 138, 138); /* Hover color */
+}
+.row{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #f8f9fa; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-brand img {
+        height: 60px; /* Smaller logo size for mobile */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        margin: 0 5px; /* Adjust spacing for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 8px; /* Further adjust padding for very small screens */
+    }
+
+    .navbar-brand img {
+        height: 50px; /* Even smaller logo size for very small screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px; /* Even smaller font size for very small screens */
+        margin: 0 3px; /* Adjust spacing */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.875rem;
+    }
+}

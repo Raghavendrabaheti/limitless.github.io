@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 15px;
+}
+
+.hero{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/vi.jpg);
+    /* background-color: hsl(var(--hue), 100%, 20%); */
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+}
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+.form{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-image: url(img/a.jpg);
+    backdrop-filter: blur(16px);
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    
+    box-shadow: #000000;
+}
+.but{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: #0a0a0a;
+    border-radius: 30px;
+}
+.b1
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #e1e5e8;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.input-g{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+.input-2{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+}
+.input-2 ::placeholder{
+    color: #f3f2f2;
+    background-color: white;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #e1e5e8;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #ffffff;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#Login{
+    left: 50px;
+}
+#Register{
+    left: 450px;
+}

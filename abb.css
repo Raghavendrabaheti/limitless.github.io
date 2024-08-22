@@ -1,0 +1,71 @@
+/* Custom styles for the gym homepage */
+
+.hero-section {
+    background: url('img/gym-hero.jpg') repeat;
+    background-position: center center;
+    background-size: auto; /* Ensures the image repeats */
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    margin: 10px;
+}
+
+.intro-section {
+    padding: 60px 0;
+    background: url('img/intro-background.jpg') no-repeat center center/cover; /* Different image for this section */
+}
+
+.intro-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-section .benefits-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.intro-section .benefits-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.featured-programs {
+    padding: 60px 0;
+    background: url('img/featured-background.jpg') no-repeat center center/cover; /* Different image for this section */
+}
+
+.featured-programs .program-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-programs .program-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.featured-programs .program-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: #343a40;
+    color: #ffffff;
+}
